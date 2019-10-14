@@ -36,6 +36,22 @@
 6. ssh to server from docker host server
   - `$ ssh user1@localhost -p 8021`
 
+# wordpress settings
+
+1. Web browser access to  http://localhost:8081 (-8085)
+2. setting wordpress
+  - select language.
+  - neccesary information
+    - title: handson-A (-E)
+    - user: wordpress
+    - passwd: wordpress
+      - and allow weak password
+      - because passwd crack later.
+    - mail: a@b.local
+    - do not index: yes
+3. install vulnble plugin
+  - select "plugin""add new""upload plugin"
+  - upload  and install `plugin/social-warfare.3.5.0.zip` file.
 
 # memo
 
