@@ -35,3 +35,17 @@
   - Repeat for other handson_webN-N servers.
 6. ssh to server from docker host server
   - `$ ssh user1@localhost -p 8021`
+
+
+# memo
+
+```
+…or create a new repository on the command line
+---
+echo "# wp-handson-asset" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/hogehuga/wp-handson-asset.git
+git push -u origin master
+```
