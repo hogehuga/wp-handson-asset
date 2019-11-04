@@ -8,7 +8,7 @@
     - use after build to dockerfile/ Dockerfile 
 - dockerfile/
   - modified wordpress docker image.
-    - add nmap, wpscan, user(user1-user5:passwd), openssh(without daemon start)
+    - add nmap, wpscan, wpcli(as wp), user(user1-user5:passwd), openssh(without daemon start)
 - memo
   - wpweb-setting.sh
     - memo.

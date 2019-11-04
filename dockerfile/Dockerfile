@@ -17,3 +17,6 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 # install wpscan
 RUN gem install wpscan
+
+# install wpcli
+run curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar ; chmod +x wp-cli.phar ; mv wp-cli.phar /usr/local/bin/wp
