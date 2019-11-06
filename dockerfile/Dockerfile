@@ -23,3 +23,5 @@ run curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 
 # copy attack page
 ADD othersite.tgz /var/www/html/
+COPY vuln-demo.pdf /var/www/html/
+
