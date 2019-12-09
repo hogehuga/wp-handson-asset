@@ -3,7 +3,7 @@ version: '2'
 services:
   db1:
     image: mysql:5.6
-    restart: always
+    restart: no
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: wordpress
@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: wordpress
 # db2:
 #   image: mysql:5.6
-#   restart: always
+#   restart: no
 #   environment:
 #     MYSQL_ROOT_PASSWORD: root
 #     MYSQL_DATABASE: wordpress
@@ -19,7 +19,7 @@ services:
 #     MYSQL_PASSWORD: wordpress
 # db3:
 #   image: mysql:5.6
-#   restart: always
+#   restart: no
 #   environment:
 #     MYSQL_ROOT_PASSWORD: root
 #     MYSQL_DATABASE: wordpress
@@ -27,7 +27,7 @@ services:
 #     MYSQL_PASSWORD: wordpress
 # db4:
 #   image: mysql:5.6
-#   restart: always
+#   restart: no
 #   environment:
 #     MYSQL_ROOT_PASSWORD: root
 #     MYSQL_DATABASE: wordpress
@@ -35,7 +35,7 @@ services:
 #     MYSQL_PASSWORD: wordpress
 # db5:
 #   image: mysql:5.6
-#   restart: always
+#   restart: no
 #   environment:
 #     MYSQL_ROOT_PASSWORD: root
 #     MYSQL_DATABASE: wordpress
@@ -48,7 +48,7 @@ services:
     ports:
      - "8081:80"
      - "8021:22"
-    restart: always
+    restart: no
     hostname: 'web1'
     environment:
       WORDPRESS_DB_HOST: db1:3306
@@ -62,7 +62,7 @@ services:
 #   ports:
 #    - "8082:80"
 #    - "8022:22"
-#   restart: always
+#   restart: no
 #   hostname: 'web2'
 #   environment:
 #     WORDPRESS_DB_HOST: db2:3306
@@ -76,7 +76,7 @@ services:
 #   ports:
 #    - "8083:80"
 #    - "8023:22"
-#   restart: always
+#   restart: no
 #   hostname: 'web3'
 #   environment:
 #     WORDPRESS_DB_HOST: db3:3306
@@ -90,7 +90,7 @@ services:
 #   ports:
 #    - "8084:80"
 #    - "8024:22"
-#   restart: always
+#   restart: no
 #   hostname: 'web4'
 #   environment:
 #     WORDPRESS_DB_HOST: db4:3306
@@ -104,7 +104,7 @@ services:
 #   ports:
 #    - "8085:80"
 #    - "8025:22"
-#   restart: always
+#   restart: no
 #   hostname: 'web5'
 #   environment:
 #     WORDPRESS_DB_HOST: db5:3306
